@@ -1,0 +1,8 @@
+<div>
+    <h1 style="color:green">Comentarios</h1>
+    <div *ngFor="let comentario of comentarios" class="border">
+      <h1>Comentario del usuario {{comentario.idComentario}}</h1>
+      <p>{{ comentario.comentario }}</p>
+      <p>Fecha del comentario: {{ comentario.fechaComentario }}</p>
+    </div>
+  </div>

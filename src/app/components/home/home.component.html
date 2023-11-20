@@ -1,0 +1,15 @@
+<div>
+    <div *ngFor="let cubo of cubos" >
+        <div class="card" style="width: 48rem">
+          <img class="card-img-top" src="{{cubo.imagen}}" alt="Card image cap" style="width: 250px; height: 250px;"/>
+          <div class="card-body">
+            <h5 class="card-title">{{ cubo.nombre }}</h5>
+            <p class="card-text">{{ cubo.modelo }}</p>
+            <p class="card-text">
+              Precio: {{ cubo.precio }} , valoracion {{ cubo.valoracion }}
+            </p>
+          </div>
+          <a class="btn btn-success"><a class="dropdown-item" [routerLink]="['/detalle', cubo.idCubo]">Detalle</a></a>
+        </div>
+      </div>
+</div>

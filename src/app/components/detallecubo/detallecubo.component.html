@@ -1,0 +1,17 @@
+<div>
+    <h1>Detalle Cubo</h1>
+    <div class="card" style="width: 48rem">
+      <img class="card-img-top" src="{{cubo.imagen}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{ cubo.nombre }}</h5>
+        <p class="card-text">{{ cubo.modelo }}</p>
+        <p class="card-text">
+          Precio: {{ cubo.precio }}, valoracion {{ cubo.valoracion }}
+        </p>
+      </div>
+      <a class="btn btn-success" [routerLink]="['/']">Volver</a>
+    </div>
+  </div>
+
+
+
